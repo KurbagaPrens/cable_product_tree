@@ -25,8 +25,8 @@ impl Wire {
     }
 }
 
-struct Stranded_Wires {
-    layer_count: u8,
+struct Layer {
+    wire_count: u16,
     compact_diameter: f32,
     
 }
