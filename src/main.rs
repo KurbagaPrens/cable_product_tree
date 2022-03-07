@@ -14,7 +14,6 @@ struct Material {
 struct Wire {
     diameter: f32,
     material: Material,
-    strength: f32,
 }
 
 impl Wire {
@@ -24,4 +23,16 @@ impl Wire {
     fn unit_wieght(&self) -> f32 {
         self.material.density*3.14*(((self.diameter/1000.).powf(2.))/4.)*1000.
     }
+}
+
+struct Stranded_Wires {
+    layer_count: u8,
+    compact_diameter: f32,
+    
+}
+
+
+
+impl Stranded_Wires {
+    
 }
